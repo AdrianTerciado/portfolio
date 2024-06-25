@@ -1,7 +1,11 @@
+import Logo from './Logo/Logo'
+import Navbar from './Navbar/Navbar'
+
 const Header = () => {
     return (
       <header>
-        ESTE ES EL HEADER
+        <Logo></Logo>
+        <Navbar></Navbar>
       </header>
     );
   };
