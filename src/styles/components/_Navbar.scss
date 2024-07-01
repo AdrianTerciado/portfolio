@@ -1,17 +1,76 @@
-nav{
-    margin-right: 10px;;
-}
-
-ul {
+nav {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    position: relative;
+    /* Needed for the absolute positioning of the menu */
+    width: 100%;
 }
 
-li {
-    list-style-type: none;
+.burger-icon {
+    width: 4em;
+    cursor: pointer;
+    position: relative;
+    /* Ensure the burger icon remains in place */
 }
 
-@media only screen and (min-width: 720px) {
+.menu {
+    display: none;
+}
 
-    
+.menu-visible {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* Make it as wide as the nav */
+    background-color: rgb(8, 65, 8);
+    /* Ensure it stands out */
+    top: 115px;
+    text-align: center;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            padding: 1em;
+            border-bottom: 1px solid #ccc;
+            font-size: 1.25em;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-visible {
+        ul {
+            li {
+                padding: 1em;
+                border-bottom: 1px solid #ccc;
+                font-size: 1.75em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+    .burguer-icon {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: right;
+            list-style-type: none;
+            gap: 75px;
+            padding-right: 30px;
+            font-size: 1.5em;
+        }
+    }
 }
