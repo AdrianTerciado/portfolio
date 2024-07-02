@@ -5,7 +5,6 @@ nav {
     color: white;
     padding: 1em;
     position: relative;
-    /* Needed for the absolute positioning of the menu */
     width: 100%;
 }
 
@@ -13,7 +12,6 @@ nav {
     width: 4em;
     cursor: pointer;
     position: relative;
-    /* Ensure the burger icon remains in place */
 }
 
 .menu {
@@ -24,9 +22,7 @@ nav {
     position: absolute;
     left: 0;
     width: 100%;
-    /* Make it as wide as the nav */
     background-color: rgb(8, 65, 8);
-    /* Ensure it stands out */
     top: 115px;
     text-align: center;
 
