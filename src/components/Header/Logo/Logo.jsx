@@ -3,7 +3,8 @@ import logo from "../../../assets/logo.png"
 const Logo = () => {
     return (
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo-image"/>
+        <p>Adrián Terciado</p>
+        <p>Portfolio</p>
       </div>
     );
   };
